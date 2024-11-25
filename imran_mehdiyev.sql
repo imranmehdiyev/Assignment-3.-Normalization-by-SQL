@@ -14,12 +14,11 @@ CREATE TABLE unnormalized (
 
 -- Step 2: Connect to the PostgreSQL database from the command line
 -- Command:
-psql -U postgres -d assignment3
+--psql -U postgres -d assignment3
 
--- Step 3: Load data into the unnormalized table from a CSV file
+-- Step 3: From cmd load data into the unnormalized table from a CSV file
 -- Ensure the file uses '=' as the delimiter
-\COPY unnormalized (crn, isbn, title, authors, edition, publisher, publisher_address, pages, years, course_name) 
-FROM 'C:/Users/LENOVO/Desktop/imran_mehdiyev.csv' DELIMITER '=';
+--\COPY unnormalized (crn, isbn, title, authors, edition, publisher, publisher_address, pages, years, course_name) FROM 'C:/Users/LENOVO/Desktop/imran_mehdiyev.csv' DELIMITER '=';
 
 -- Step 4: First Normal Form (1NF)
 CREATE TABLE first_normal AS
